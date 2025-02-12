@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@pushprotocol/restapi": "^1.7.30",
+    "dotenv": "^16.4.7",
     "ethers": "^5.7.2",
     "next": "15.1.7",
     "push-express": "^0.0.1",

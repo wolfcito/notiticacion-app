@@ -30,6 +30,10 @@ export const sendNotification = async (
 
   console.log('inboxNotifications:', inboxNotifications)
   console.log('spamNotifications:', spamNotifications)
+
+  // userAlice.channel.notifications(channelAddress, {options?})
+const allNotifications = await userAlice.channel.notifications(PUSH_CHANNEL_ADDRESS);
+console.log('allNotifications:', allNotifications)
   // Subscribe to push channel
   await userAlice.notification.subscribe(
     `eip155:11155111:${PUSH_CHANNEL_ADDRESS}`, // channel address in CAIP format
